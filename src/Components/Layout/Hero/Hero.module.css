@@ -1,0 +1,149 @@
+.hero-wrapper {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	flex-wrap: wrap;
+	position: relative;
+	padding: 90px 20px;
+}
+
+/* HERO TEXT SECTION */
+.hero-text {
+	position: relative;
+	z-index: 2;
+	width: 50%;
+}
+
+.hero-text h1 {
+	font-size: 3.5rem;
+	font-weight: 500;
+}
+
+.typing-text {
+	color: #e63946;
+	position: relative;
+	font-size: 5rem;
+	line-height: 4rem;
+}
+
+.typing-caret {
+	animation: caret 2s infinite step-end;
+}
+
+.typing-text span {
+	color: transparent;
+	position: relative;
+}
+
+.typing-text span:after {
+	content: "";
+	width: 5px;
+	height: 4rem;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(-50%, -50%);
+	background-color: #e63946;
+}
+
+.hero-text p {
+	font-size: 1.3rem;
+}
+
+.button-wrapper {
+	display: flex;
+	gap: 10px;
+}
+
+.button-wrapper a {
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 2px solid black;
+	transition: all ease 0.2s;
+}
+
+.button-wrapper a:first-of-type {
+	color: #fff;
+	background-color: #e63946;
+	border-color: #e63946;
+}
+
+.button-wrapper a:nth-of-type(2) {
+	color: #e63946;
+	background-color: #fff;
+	border-color: #e63946;
+}
+
+.button-wrapper a:hover {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: translateY(-1px);
+}
+
+/* HERO IMAGE SECTION */
+.hero-image {
+	width: 50%;
+}
+
+.hero-image img {
+	width: 100%;
+}
+
+@keyframes caret {
+	from,
+	to {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 100%;
+	}
+}
+
+/* MEDIA QUERRY */
+@media screen and (max-width: 1100px) {
+	.hero-wrapper {
+		gap: 60px;
+	}
+
+	.hero-wrapper .hero-text,
+	.hero-wrapper .hero-image {
+		width: 100%;
+		text-align: center;
+	}
+
+	.button-wrapper {
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 820px) {
+	.hero-wrapper {
+		align-items: center;
+		gap: 60px;
+	}
+
+	.hero-wrapper .hero-text,
+	.hero-wrapper .hero-image {
+		width: 100%;
+	}
+
+	.hero-text h1 {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	.hero-text p {
+		font-size: 1rem;
+	}
+
+	.typing-text {
+		color: #e63946;
+		position: relative;
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+	}
+
+	.typing-text span:after {
+		height: 2.5rem;
+	}
+}

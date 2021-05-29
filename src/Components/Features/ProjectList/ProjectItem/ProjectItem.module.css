@@ -1,0 +1,81 @@
+.project-item {
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project-thumbnail {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 5px solid #e63946;
+}
+
+.project-thumbnail img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.project-thumbnail .pc-buttons {
+	position: absolute;
+	display: flex;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.85);
+	transition: all ease 0.3s;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.mb-buttons {
+	display: none;
+	background-color: rgba(255, 255, 255, 0.85);
+	gap: 10px;
+}
+
+.project-item:hover .project-thumbnail .pc-buttons {
+	top: 0;
+}
+
+.project-info {
+	flex: 1;
+	padding: 25px 20px;
+	background-color: #fff;
+}
+
+.project-name {
+	margin-top: 0;
+	transform: translateX(10px);
+}
+
+.project-name:before {
+	opacity: 1;
+	left: -10px;
+}
+.technologies {
+	padding-left: 10px;
+}
+.technologies h4 {
+	margin: 0;
+}
+
+.technologies ul {
+	margin-top: 0;
+	padding-left: 10px;
+}
+
+.technologies ul li {
+	list-style: circle;
+}
+
+@media screen and (max-width: 820px) {
+	.project-thumbnail .pc-buttons {
+		display: none;
+	}
+
+	.mb-buttons {
+		display: flex;
+	}
+}

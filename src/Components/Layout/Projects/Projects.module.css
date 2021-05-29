@@ -1,0 +1,7 @@
+.project-wrapper {
+    padding: 120px 0 180px 0;
+}
+
+.project-wrapper > h2 {
+    text-align: center;
+}
