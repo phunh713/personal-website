@@ -9,7 +9,7 @@ const Projects: FC = () => {
 		<>
 			<Container>
 				<div className={classes["project-wrapper"]}>
-					<h2>Projects</h2>
+					<h2>Selected Projects</h2>
 					<ProjectList />
 				</div>
 			</Container>

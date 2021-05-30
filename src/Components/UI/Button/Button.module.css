@@ -4,6 +4,9 @@
 	border-width: 2px;
 	border-style: solid;
 	transition: all ease 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .button:hover {

@@ -3,6 +3,9 @@ import { FC, useState } from "react";
 import Container from "../../UI/Container/Container";
 import logo from "assets/images/logo-small.png";
 import Backdrop from "Components/UI/Backdrop/Backdrop";
+import resume from "assets/documents/Resume.pdf";
+import Button from "Components/UI/Button/Button";
+import { RiDownloadCloud2Line } from "react-icons/ri";
 
 const Header: FC<{ activeId: string; onToggleMobileMenu: (arg: boolean) => void }> = ({
 	activeId,
@@ -66,8 +69,10 @@ const Header: FC<{ activeId: string; onToggleMobileMenu: (arg: boolean) => void 
 							>
 								<a href="#contact">contact</a>
 							</li>
-							<li onClick={handleClickNavItem} className={`${classes["nav-item"]} text-hover-effect`}>
-								<a href="#">My Resume</a>
+							<li onClick={handleClickNavItem} className={`${classes["nav-item"]}`}>
+								<Button href={resume} color="#e63946">
+									My Resume <RiDownloadCloud2Line  size={20}/>
+								</Button>
 							</li>
 						</ul>
 						<Backdrop

@@ -1,7 +1,6 @@
 import classes from "./About.module.css";
 import { FC } from "react";
 import Container from "Components/UI/Container/Container";
-// import aboutImg from "assets/images/about-me.png";
 import { FaLaptopCode } from "react-icons/fa";
 import { RiUserVoiceLine } from "react-icons/ri";
 import Card from "Components/UI/Card/Card";
@@ -17,7 +16,6 @@ const About: FC = () => {
 			<div className={classes["about-wrapper"]}>
 				<Container fluid>
 					<div className={classes["about-text-wrapper"]}>
-						{/* <img src={aboutImg} alt="me studying things" /> */}
 						<h2>Nice to meet you</h2>
 						<p>
 							After 4 years working in digital marketing field, I decided to quit and started to learn

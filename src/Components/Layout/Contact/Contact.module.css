@@ -49,13 +49,23 @@
 }
 
 @media screen and (max-width: 640px) {
+	.contact-wrapper > p {
+		font-size: 1.1rem;
+	}
+
 	.name,
 	.email,
 	.phone,
 	.github {
 		font-size: 1rem;
 	}
-	.contact-card-info {
-		margin-left: 3%;
+
+	.contact-card {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.contact-card-logo {
+		display: none;
 	}
 }
