@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import Container from "../../UI/Container/Container";
 import logo from "assets/images/logo-small.png";
 import Backdrop from "Components/UI/Backdrop/Backdrop";
-import resume from "assets/documents/Resume.pdf";
+import resume from "assets/documents/Resume-PhuNH.pdf";
 import Button from "Components/UI/Button/Button";
 import { RiDownloadCloud2Line } from "react-icons/ri";
 
@@ -14,6 +14,7 @@ const Header: FC<{ activeId: string; onToggleMobileMenu: (arg: boolean) => void 
 	const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
 
 	const handleClickLogo = () => {
+        window.history.pushState("", document.title, window.location.pathname)
 		window.scrollTo(0, 0);
 	};
 

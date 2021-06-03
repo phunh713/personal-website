@@ -19,7 +19,7 @@ const Hero: FC = () => {
 							<span className={finished ? classes["typing-caret"] : ""}>|</span>
 						</strong>
 					</h1>
-					<p>I love to build simple but beautiful and intuitive websites!</p>
+					<p>I love to build simple yet beautiful and intuitive websites!</p>
 					<div className={classes["button-wrapper"]}>
 						<a href="#about">My Skills</a>
 						<a href="#projects">My Projects</a>
