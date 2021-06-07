@@ -16,7 +16,7 @@ const Contact: FC = () => {
 						I'm currently looking for an entry-level Front End Developer position. If you're looking for a
 						hard-working and responsible employee, kindly contact me at:
 					</p>
-					<Card className={classes["contact-card"]}>
+					<Card className={classes["contact-card"]} dataAos="zoom-in">
 						<div className={classes["contact-card-logo"]}>
 							<img src={logo} alt="PhuNH logo" />
 						</div>
@@ -49,7 +49,7 @@ const Contact: FC = () => {
 					</Card>
 				</div>
 			</Container>
-			<Title position="bottom-right" color="#dee2e6">
+			<Title position="bottom-right" color="#dee2e6" dataAos="fade-up">
 				Contact Me
 			</Title>
 		</>

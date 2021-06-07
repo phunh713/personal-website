@@ -13,7 +13,7 @@ const Projects: FC = () => {
 					<ProjectList />
 				</div>
 			</Container>
-			<Title position="bottom-left" color="#e9ecef">
+			<Title position="bottom-left" color="#e9ecef" dataAos="fade-up">
 				My Projects
 			</Title>
 		</>

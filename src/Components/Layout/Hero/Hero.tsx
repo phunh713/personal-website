@@ -25,7 +25,7 @@ const Hero: FC = () => {
 						<a href="#projects">My Projects</a>
 					</div>
 				</div>
-				<div className={classes["hero-image"]}>
+				<div className={classes["hero-image"]} data-aos="fade-in">
 					<img src={heroImg} alt="a male developer sitting and coding" />
 				</div>
 			</div>

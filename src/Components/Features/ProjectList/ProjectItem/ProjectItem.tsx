@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import classes from "./ProjectItem.module.css";
 import { _ProjectItem } from "../ProjectList";
 import Button from "Components/UI/Button/Button";
+import Card from "Components/UI/Card/Card";
 
 interface ProjectItemProps extends _ProjectItem {
 	className: string;
@@ -9,7 +10,7 @@ interface ProjectItemProps extends _ProjectItem {
 
 const ProjectItem: FC<ProjectItemProps> = (props) => {
 	return (
-		<div className={`${classes["project-item"]} ${props.className}`}>
+		<Card className={`${classes["project-item"]} ${props.className}`} dataAos="fade-in">
 			<div className={classes["project-thumbnail"]}>
 				<img src={props.thumbnail} alt={props.description} />
 				<div className={classes["pc-buttons"]}>
@@ -23,7 +24,7 @@ const ProjectItem: FC<ProjectItemProps> = (props) => {
 			</div>
 			<div className={classes["project-info"]}>
 				<h2 className={`text-hover-effect ${classes["project-name"]}`}>{props.name}</h2>
-                <div className={classes["mb-buttons"]}>
+				<div className={classes["mb-buttons"]}>
 					<Button solid color="#e63946" href={props.website}>
 						Live Demo
 					</Button>
@@ -51,7 +52,7 @@ const ProjectItem: FC<ProjectItemProps> = (props) => {
 					})}
 				</div>
 			</div>
-		</div>
+		</Card>
 	);
 };
 

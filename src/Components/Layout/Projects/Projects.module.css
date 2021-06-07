@@ -1,5 +1,7 @@
 .project-wrapper {
     padding: 120px 0 180px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .project-wrapper > h2 {

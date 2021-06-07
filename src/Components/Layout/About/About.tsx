@@ -26,7 +26,7 @@ const About: FC = () => {
 				</Container>
 				<Container>
 					<div className={classes["skills-table"]}>
-						<Card className={classes["technical"]}>
+						<Card className={classes["technical"]} dataAos="fade-down" dataAosOffset={300} dataAosDelay={50}>
 							<FaLaptopCode size={63} color="#1d3557" />
 							<h2>Technical Skills</h2>
 							<p>I've learnt to code from CyberSoft, Udemy, Codecademy and of course Google</p>
@@ -46,7 +46,7 @@ const About: FC = () => {
 								<li>SEO</li>
 							</ul>
 						</Card>
-						<Card className={classes["soft"]}>
+						<Card className={classes["soft"]} dataAos="fade-down" dataAosOffset={300} dataAosDelay={50}>
 							<RiUserVoiceLine size={63} color="#1d3557" />
 							<h2>Soft Skills</h2>
 							<p>
@@ -67,7 +67,7 @@ const About: FC = () => {
 						</Card>
 					</div>
 				</Container>
-				<Title position="bottom-right" color="#f8f9fa">
+				<Title position="bottom-right" color="#f8f9fa" dataAos="fade-up">
 					About Me
 				</Title>
 			</div>
